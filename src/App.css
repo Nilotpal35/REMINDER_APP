@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#021018, #15223a);
+  color: #d9e2f1;
+  min-height: 100vh;
+}
+
+#welcome-header {
+  height: 100vh;
+}
+#welcome-header-content {
+  position: absolute;
+  top: 35%;
+  left: 1%;
+  right: 1%;
+  z-index: 1;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+#welcome-header-content h1 {
+  /* text-align: center; */
+  font-size: 3rem;
+  color: #fff;
+  margin: 2rem 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#btn-ctx {
+  background-color: blue;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#btn-ctx:hover {
+  background-color: #0f86ef;
+}
+
+#city-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#hero-image {
+  width: 32vw;
+  max-width: 40rem;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+}
+
+main {
+  width: 80%;
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+#welcome-content section {
+  margin: 6rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#welcome-content h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #f2f25d;
+}
+
+#challenge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#challenge-page {
+  /* background-color: #395078; */
+  /* width: 60%; */
+  /* min-width: auto; */
+  width: 50rem;
+  max-width: 90%;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(108, 159, 204);
+  /* font-size: large; */
+}
+#challenge-page h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  /* padding: 1rem */
+}
+
+#challenge-page button {
+  background-color: #0c35dc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 1.6rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  border-style: none;
+}
+
+#challenge-page button:hover {
+  /* opacity: 0.5; */
+  scale: 1.1;
+  background-color: #0f86ef;
+  box-shadow: 0 0 6px rgba(256, 256, 256, 0.5);
+}
+
+#challenge-content {
+  background-color: #2c4062;
+  width: 50%;
+  border-radius: 5px;
+  min-height: 10vh;
+  overflow: hidden;
+}
+
+.badge {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: #0f61ef;
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+#tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+#tabs button {
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  background-color: transparent;
+  color: #6c9cf6;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+#tabs button:hover,
+#tabs button.selected {
+  /* background-color: #355767; */
+  color: #fff;
+}
+
+#challenges {
+  background-color: #22323a;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 45rem;
+  max-width: 90%;
+  margin-bottom: 2rem;
+}
+
+#challenge-box {
+  background-color: #4d6184;
+}
+
+#newChallenge button:hover {
+  /* background-color: #0b2d69; */
+  /* color: white; */
+  /* color: rgb(5, 48, 220); */
+  scale: 1.1;
+}
+
+#newChallenge input,
+textarea {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#newChallenge label {
+  font-size: 1rem;
+  color: #3b4454;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.challenge-item-details {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.challenge-item-details h2 {
+  margin-top: 0;
+  font-weight: bold;
+  /* color: #8298cb; */
+}
+
+.challenge-item-details select {
+  background-color: #15223a;
+  padding:  0.5rem;
+  color: aliceblue;
+  border-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-weight: 400; */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.challenge-item-details button {
+}
+
+.challenge-item-details-icon {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+.challenge-item-details.expanded .challenge-item-details-icon {
+  transform: rotate(180deg);
+  transition: 0.5s ease-out;
+}
+
+.challenge-item-details .challenge-item-details-icon {
+  transform: rotate(0deg);
+  transition: 0.5s ease-out;
+}
+
+.tab {
+  color: #8298cb;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  gap: 1rem;
+}
+.tab p {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.tab p:hover {
+  color: white;
+  scale: 1.1;
+}
+.tab p.active {
+  color: white;
+  font-weight: bold;
+  /* scale: 1.1; */
+  /* background: linear-gradient(rgb(91, 84, 84), rgb(59, 49, 49)); */
+  border-bottom: 4px solid rgb(55, 67, 243);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  /* max-width: 50%; */
+}
+.icons img {
+  min-width: 2rem;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  border-radius: 50%;
+}
+
+.icons img:hover {
+  scale: 1.1;
+}
+
+.icons img.active {
+  border: 2px solid red;
+  scale: 1.1;
+}
